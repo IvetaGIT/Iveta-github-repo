@@ -9,7 +9,7 @@ SELECT
 	food_category,
 	price_value,
 	price_unit 
-FROM t_iveta_kolinska_project_sql_primary_final tikpspf 
+FROM t_iveta_kolinska_project_sql_primary_final  
 WHERE category_code IN ('114201', '111301')
 	AND `year` IN ('2006', '2018')
 	AND value_type_code = 5958
