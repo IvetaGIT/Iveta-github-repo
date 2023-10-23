@@ -1,4 +1,5 @@
 -- 1.otázka: Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?
+
 SELECT 
     a.`year`,
 	b.`year` AS year_prev,

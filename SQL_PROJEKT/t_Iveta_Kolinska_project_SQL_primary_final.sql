@@ -20,7 +20,7 @@ SELECT
 		b.industry
 FROM (
 	SELECT
-		round(avg(cp.value), 2) AS avg_price,
+		ROUND(AVG(cp.value), 2) AS avg_price,
 		cp.category_code,
 		cpc.name AS food_category,
 		cpc.price_value,
@@ -36,7 +36,7 @@ FROM (
 	) a
 LEFT JOIN (
 	SELECT
-		round(avg(cpay.value), 2) AS average_employees_or_wages,
+		ROUND(AVG(cpay.value), 2) AS average_employees_or_wages,
 		cpay.value_type_code,
 		cpay.unit_code,
 		cpu.name AS unit_name,
@@ -55,7 +55,6 @@ LEFT JOIN (
 		ON a.`year` = b.`year`
 	ORDER BY a.`year`;
 
-  
-   
- SELECT *
- FROM t_iveta_kolinska_project_sql_primary_final;
+
+SELECT *
+FROM t_iveta_kolinska_project_sql_primary_final;

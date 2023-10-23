@@ -2,10 +2,9 @@
 
 SELECT 
 	`year`,
-	round(avg(average_employees_or_wages), 2) AS avg_wages,
-	round(avg(avg_price), 2) AS avg_price_II,
-	round(avg(average_employees_or_wages) / avg(avg_price), 0) AS how_many_possible_to_buy,
-	category_code,
+	ROUND(AVG(average_employees_or_wages), 2) AS avg_wages,
+	ROUND(AVG(avg_price), 2) AS AVG_avg_food_price,
+	ROUND(AVG(average_employees_or_wages) / AVG(avg_price), 0) AS how_many_possible_to_buy,
 	food_category,
 	price_value,
 	price_unit 

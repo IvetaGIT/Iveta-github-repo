@@ -9,7 +9,7 @@ SELECT
 	c.currency_name,
 	c.currency_code,
 	e.`year`,
-	round( e.GDP / 1000000, 2 ) as GDP_mil_dollars,
+	ROUND( e.GDP / 1000000, 2 ) AS GDP_mil_dollars,
 	e.gini,
 	e.taxes 
 FROM countries c 
